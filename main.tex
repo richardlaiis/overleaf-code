@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\usepackage[margin=2cm, a4paper]{geometry}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{ctex}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{pdfpages}
+\renewcommand{\contentsname}{目錄}
+\graphicspath{{./Image}}
+\setCJKmainfont{Noto Serif CJK SC}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\textbf{標題)}}
+\fancyhead[R]{\textbf{建國中學\ 賴昱錡}}
+
+\title{\textbf{標題}\\ \vspace{0.5cm}副標題}
+\author{\textbf{作者: 建國中學 325班 賴昱錡}}
+\date{April 2024}
+\begin{document}
+\graphicspath{{./Image}}
+\doublespacing
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Chapter 1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{Image/Image.png}
+    \begin{center}
+        \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{Click this}
+    \end{center}
+    % \caption{Caption}
+\end{figure}
+
+\end{document}
