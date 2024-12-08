@@ -1,3 +1,4 @@
+% compile this file with xelatex
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{xeCJK}
@@ -12,7 +13,11 @@
 \usepackage{pdfpages}
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\figurename}{圖}
-%\graphicspath{{./Image}}
+\graphicspath{{./Image}}
+
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{reference.bib}  % Specify the .bib file
+
 \setCJKmainfont{Noto Serif CJK SC}
 \hypersetup{
     colorlinks=true,
@@ -46,5 +51,7 @@
 %        \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{Click this}
 %    \end{center}
 %\end{figure}
+
+%\printbibliography
 
 \end{document}
